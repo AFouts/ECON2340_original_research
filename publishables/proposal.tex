@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,stmaryrd,amssymb,bbm,amsfonts,amstext,graphicx,multicol,array}
+\usepackage{subfigure}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{pdfpages}
+\usepackage[numbers]{natbib} % Use natbib with numerical citations
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{graphics, graphicx}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor =blue,
+    citecolor = blue
+}
+
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
+
+\title{ECON2310 Fall 2024\\Outline of a Possible Topic for the Research Proposal\\Training the Self-Employed}
+\author{Adrien Foutelet}
+\date{October 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Context and Motivation}
+
+Labor markets in Europe are known for their rigidities caused by strong labor laws (minimum wage, limited work hours, extended annual leave, mandatory pension contributions, unemployment benefits, severance pay, health and safety standards in the workplace, etc.). The difference between employment, in its statutory understanding, and work, the activity as an input in a production process, is key: when a work is not profitable enough to fulfil the conditions of employment, the related labor demand is not solvable so the work is not performed domestically, or not performed by the private sector.
+
+An exception, however, is self-employment: work performed in this context is almost not protected. For some highly regulated professions, like private practices or some trades, independent workers reach the level of protection of salaried workers through welfare contributions and private savings. So is the case for successful entrepreneurs. But for a lot of tradesmen focusing on barely profitable occupations, the hourly wage and the observed level of individual protection is much lower than that of salaried workers. Indeed, they can easily fall in the trap of working long hours for works that are not worth it, pay little tax, because of low turnover or voluntary avoidance and, in turn, be entitled to get few welfare benefits and pensions (which are roughly proportion of taxes paid).
+
+For example, in 2016, the average monthly pension of retired self-employed people was  EUR 1,209 (EUR 1,137 without private practices), while the average monthly pension of other retired people was EUR 1,425. In 2019, French independent workers worked 2,103 hours on average while others worked 1,664 hours. In 2019, while 14\% of the population lived below the poverty line, 18\% of independent workers did and almost 11\% earned less than half the minimum wage. The figure below (in French) shows the proportion of the self-employed earning less than half the monthly minimum wage (in blue) and living below the poverty line (in red) in 2019, by profession (farmers, tradesmen, shopkeepers, business owners with less than 10 employees, private practices, arts and media, intermediate occupations but medical and social professions). To this day, unemployment benefits for independent workers are non-existent. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{../documents/poverty_selfemployment.png}
+    \caption{From Insee Première n°1884, "Un peu plus d’un indépendant sur dix gagne moins de la moitié du Smic annuel et vit sous le seuil de pauvreté", January 2022.}
+    \label{fig:enter-label}
+\end{figure}
+
+To summarize, while the loose labor laws on independent work allow a versatility that is valuable in domains like entrepreneurship (permitting more risk-taking) or private practices (permitting more work hours and high pays) they fail at protecting a portion of modest workers who would gain from taking a salaried job. It also fails at maximizing social welfare since the latter workers would contribute more to the economy by entering a labor market where solvable demand covers more profitable work.
+
+Of course, by choosing an independent career, a worker reveals their preferences: freedom in work choice and organisation, no hierarchical structure, a probability to strike it rich by building and selling a successful business, opportunities to evade taxes through moonlighting, risk seeking, etc. However, considering how poor a significant share of self-employed people are, especially in old age, it is likely that their estimation of the probability of failing was wrong and that their estimation of the outcome from failing was wrong. Having low risk aversion of losing invested capital is one thing, but here the risk goes way beyond: we are talking about people who choose to perhaps never earn much, be excluded from most welfare benefits and die in relative poverty, significantly below the standard of dignity granted to anyone who pursued a salaried career. These wrong estimations are two individual misrepresentations.
+
+Another major misrepresentation is the idea that taxes on independent labor are state-organised thefts depriving from earning a decent living. Most of these taxes being welfare contributions, in fact complying insures the self-employed against risk. They offer a cheaper alternative to private savings that can bridge the protection gap between the independents and the salaried workers. The neoclassical slef-employed agent would therefore interpret difficulties to pay taxes as a signal of their work lacking solvability and of the need for a change in profession. In contrast, the agent with misrepresentations sticks to their profession and moonlights, as long as they earn more than the short-run subsistence threshold.
+
+In the context of self-employed individuals with misrepresentations, an active labor market policy aiming at providing information on the true outcome from failing and its true probability would be socially desirable. Indeed, it would be beneficial in minimizing poverty in independent professions and in increasing social welfare by redirecting some of the independent labor supply (from the least profitable professions) to the salaried labor market. An active labor market policy aiming at providing information on the strategies to mitigate the risks (insuring against risk through tax compliance or private savings) would be beneficial in minimizing poverty in independent professions and in increasing social welfare by encouraging independent workers to focus on the most profitable professions.
+
+The purpose of this research is:
+\begin{itemize}
+    \item to clarify the formalisation of workers slef-employing versus participating in the salaried labor market, with misrepresentations as factors,
+    \item to compute the deadweight loss caused by these misrepresentations,
+    \item to empirically assess the size of these misrepresentations,
+    \item to propose a training program aiming at correcting the misrepresentations,
+    \item to propose a RCT based on the program.
+\end{itemize}
+
+\section{Literature}
+
+This proposal walks in the footstep of Crépon and van den Berg  (2016) \cite{crepon2016} (see ECON2310 Review Assignment 2) who, because of equilibrium effects, encourage to think about the efficiency of ALMP as mitigating inequalities rather than solving unemployment. In that respect, the design of labor training should focus on precise effects targeting well identified groups, as opposed to the carpet-bombing approach of universal training.
+
+On the theoretical side, de Wit (1993) \cite{dewit1993} reviews a plethora of employment type choice models. Some include entrepreneurial ability, taxes and risk aversion. The latter is the common deciding factor considered in the literature for the choice between self-employment and salaried work. It was successfully tested in behavioral terms using psychometric data by Ekelund, Johansson, Järvelin, and Lichtermann (2005) \cite{ekelund2005}. The most convincing model seems to be the one of Parker and Simon (1996) \cite{parker1996}: individuals maximise their expected discounted intertemporal utility, with constant relative risk aversion, for choosing between uninsurable risk and insurable risk under uncertainty. No model discusses the problem of misrepresentations.
+
+\section{Data}
+
+Self-employed earnings, tax contributions and benefits can be found in the dataset "Enquête annuelle sur les revenus fiscaux et sociaux" (a representative sample of 49,500 observations by INSEE). Moonlighting could be reconstructed by spotting tax rate bunchers and comparing a smoothened distribution of contributions to the actual one.
+
+Of course the dataset does not include variables relating to representations. The idea would be to infer them from the model and two facts:
+\begin{itemize}
+    \item Those who do not bunch and earn above minimum wage have correct representations,
+    \item Those who bunch or earn below minimum wage have misrepresentations. 
+\end{itemize}
+
+%\section{Misceallaneous intuitions to keep in mind}
+
+%The decision of an individual to become self-employed should transpire:
+%\begin{itemize}
+%    \item Expected life-time earnings, including the probability to become very rich, the low welfare benefits, and the opportunity for moonlighting,
+%    \item Total freedom in the work process as opposed to the limiting practice regulations (e.g.: unlimited working hours V. mandatory amount of leisure time; unlimited risk taking V. health and safety standards and costly insurance against risks; etc.),
+%    \item Occupational and organisational freedom,
+%    \item Entry to the network of entrepreneurs.
+%\end{itemize}
+
+%The welfare effects should transpire:
+%\begin{itemize}
+%    \item How productive and profitable the self-employed work has been throughout the whole career (output, taxes paid, moonlighting),
+%    \item A worker's health costs,
+%    \item A worker's children's well being (and ability to contribute to social welfare themselves).
+%\end{itemize}
+
+%Miscellaneous outlooks include:
+%\begin{itemize}
+%    \item Find panel data on self-employed and salaried workers to track transitions and welfare outcomes over time. This could help quantifying the welfare implications of self-employment biases.
+%    \item Rigid labor laws unintentionally direct some individuals toward self-employment.
+%\end{itemize}
+
+
+
+
+
+\begin{thebibliography}{9}
+
+\bibitem{crepon2016}
+Bruno Crépon \& Gerard J. van den Berg, 2016. "Active Labor Market Policies," Annual Review of Economics, Annual Reviews, vol. 8(1), pages 521-546, October.
+
+\bibitem{dewit1993}
+de Wit, G. (1993). Models of self-employment in a competitive market. In: Determinants of Self-employment. Studies in Contemporary Economics.
+
+\bibitem{ekelund2005}
+Jesper Ekelund, Edvard Johansson, Marjo-Riitta Järvelin, Dirk Lichtermann. "Self-employment and risk aversion—evidence from psychological test data". Labour Economics, Volume 12, Issue 5, October 2005, Pages 649-659
+
+\bibitem{parker1996}
+Parker, Simon C. “A Time Series Model of Self-Employment under Uncertainty.” Economica, vol. 63, no. 251, 1996, pp. 459–75.
+
+\end{thebibliography}
+
+\end{document}
