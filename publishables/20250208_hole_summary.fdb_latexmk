@@ -1,7 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1733712462.34996 "/Users/adrienfoutelet/Dropbox/Adrien/8_Brown/ECON2310 Labor Economics I/ECON2310_Final_project/publishables/proposal.tex" "proposal.pdf" "proposal" 1733712463.07564 0
-  "../documents/poverty_selfemployment.png" 1733693056.37756 157189 52d769e2890ec2cde930df4c4d5a1e1f ""
-  "/Users/adrienfoutelet/Dropbox/Adrien/8_Brown/ECON2310 Labor Economics I/ECON2310_Final_project/publishables/proposal.tex" 1733712461.46397 11200 ace98f4264ba4839105614a017442d8c ""
+["pdflatex"] 1739170646.23112 "/Users/adrienfoutelet/Dropbox/Adrien/8_Brown/ECON2340 Spring25 Labor Economics II/ECON2340_original_research/publishables/20250208_hole_summary.tex" "20250208_hole_summary.pdf" "20250208_hole_summary" 1739170646.80436 0
+  "/Users/adrienfoutelet/Dropbox/Adrien/8_Brown/ECON2340 Spring25 Labor Economics II/ECON2340_original_research/publishables/20250208_hole_summary.tex" 1739168138.98297 20229 00698c21c624f979cf6819257fd24f7c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -124,12 +123,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1732582015.00807 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1732581978 8221429 a63a9be36eafe622570b7ea48480a5cf ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "proposal.aux" 1733712463.00177 1373 c2409dc58d111ed1cad228cdccd84a21 "pdflatex"
-  "proposal.out" 1733712463.00244 315 7534a6c3de54fc1cb4445ab7775b750d "pdflatex"
-  "proposal.tex" 1733712461.46397 11200 ace98f4264ba4839105614a017442d8c ""
+  "20250208_hole_summary.aux" 1739170646.74999 679 53b650e66fbb262829b3f2a8f5d6111b "pdflatex"
+  "20250208_hole_summary.out" 1739170646.75057 660 83995b3191985ea70d5cc38ad08908da "pdflatex"
+  "20250208_hole_summary.tex" 1739168138.98297 20229 00698c21c624f979cf6819257fd24f7c ""
   (generated)
-  "proposal.aux"
-  "proposal.log"
-  "proposal.out"
-  "proposal.pdf"
+  "20250208_hole_summary.aux"
+  "20250208_hole_summary.log"
+  "20250208_hole_summary.out"
+  "20250208_hole_summary.pdf"
   (rewritten before read)
